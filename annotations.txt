@@ -20,3 +20,11 @@ https://www.aluiziodeveloper.com.br/prettier/
 
 - adicionar ormconfig com configurações da base de dados
 - adiciona configurações typeorm
+
+######################################################################
+
+- cria migration de Produtos
+yarn typeorm migration:create -n CreateProducts
+- executa a migration
+yarn typeorm migration:run
+

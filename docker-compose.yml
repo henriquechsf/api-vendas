@@ -6,7 +6,7 @@ services:
     entrypoint: .docker/entrypoint.sh
     container_name: apivendas-app
     ports:
-      - '3000:3000'
+      - '3333:3333'
     volumes:
       - .:/home/node/app
     depends_on:
@@ -23,8 +23,9 @@ services:
     volumes:
       - .docker/dbdata:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=docker
       - POSTGRES_DB=apivendas
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=docker
 
   redis:
     image: 'bitnami/redis:latest'
