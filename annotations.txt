@@ -1,17 +1,22 @@
-config inicial do projeto
+- config inicial do projeto
 https://www.aluiziodeveloper.com.br/criar-aplica%C3%A7%C3%A3o-node-js-com-typescript/
 
-padronizacao do codigo
+- padronizacao do codigo
 https://www.aluiziodeveloper.com.br/editorconfig/
 https://www.aluiziodeveloper.com.br/eslint/
 https://www.aluiziodeveloper.com.br/prettier/
 
-config importacoes path no tsconfig
+- config importacoes path no tsconfig
 
-instalar libs ->
-  express
-  cors
-  express-async-errors
+- instalar libs ->
+    express
+    cors
+    express-async-errors
 
-instalar libs -D ->
-  @types/express @types/cors
+- instalar libs -D ->
+    @types/express @types/cors
+
+- adicionar arquivos Dockerfile e configurar docker-compose.yml
+
+- adicionar ormconfig com configurações da base de dados
+- adiciona configurações typeorm
