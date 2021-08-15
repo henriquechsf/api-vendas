@@ -37,4 +37,5 @@ yarn typeorm migration:run
 
 - Implementar as rotas
 
+- Implementar validações das requisições HTTP nas rotas
 
