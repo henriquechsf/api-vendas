@@ -31,4 +31,6 @@ yarn typeorm migration:run
 
 - Definir StrictPropertieInitialization como false no tsconfig.json // inicialização de entidades
 
+- Implementar as classes de serviço para operações CreateProducts
 
+-
