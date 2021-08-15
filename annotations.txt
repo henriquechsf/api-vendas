@@ -22,9 +22,13 @@ https://www.aluiziodeveloper.com.br/prettier/
 - adiciona configurações typeorm
 
 ######################################################################
+- no banco de dados(postgres) adicionar a extensão UUID
 
 - cria migration de Produtos
 yarn typeorm migration:create -n CreateProducts
 - executa a migration
 yarn typeorm migration:run
+
+- Definir StrictPropertieInitialization como false no tsconfig.json // inicialização de entidades
+
 
