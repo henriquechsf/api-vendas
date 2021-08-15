@@ -33,4 +33,6 @@ yarn typeorm migration:run
 
 - Implementar as classes de serviço para operações CreateProducts
 
--
+- Implementar métodos controller
+
+
