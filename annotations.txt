@@ -35,4 +35,6 @@ yarn typeorm migration:run
 
 - Implementar métodos controller
 
+- Implementar as rotas
+
 
