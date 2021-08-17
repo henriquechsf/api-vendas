@@ -39,3 +39,8 @@ yarn typeorm migration:run
 
 - Implementar validações das requisições HTTP nas rotas
 
+#######################################################################
+
+- instalar lib bcryptjs para criptografar a senha do usuário
+
+
