@@ -43,3 +43,6 @@ yarn typeorm migration:run
 
 - instalar lib bcryptjs para criptografar a senha do usuário
 - instalar a lib jsonwebtoken
+- gerar o token na reposta da autenticação
+
+- criar middleware para proteção das rotas privadas

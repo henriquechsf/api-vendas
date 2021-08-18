@@ -1,6 +1,7 @@
 import { getCustomRepository } from 'typeorm';
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
+import authConfig from '@config/auth';
 import User from '../typeorm/entities/User';
 import AppError from '@shared/errors/AppError';
 import UsersRepository from '../typeorm/repositories/UsersRepository';
@@ -32,9 +33,9 @@ class CreateSessionsService {
     }
 
     // hash md5
-    const token = sign({}, 'db9d24ef0cc5b7d08ca6bc88b128c227', {
+    const token = sign({}, authConfig.jwt.secret, {
       subject: user.id,
-      expiresIn: '1d',
+      expiresIn: authConfig.jwt.expiresIn,
     });
 
     return {
