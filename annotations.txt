@@ -51,3 +51,7 @@ yarn typeorm migration:run
 
 - adicionar tipagem personalizada ao express (adicionar config typeroot no tsconfig)
 - adicionar lib multer para upload imagem avatar
+
+#######################################################################
+
+-
