@@ -46,3 +46,7 @@ yarn typeorm migration:run
 - gerar o token na reposta da autenticação
 
 - criar middleware para proteção das rotas privadas
+
+#######################################################################
+
+- adicionar tipagem personalizada ao express (adicionar config typeroot no tsconfig)

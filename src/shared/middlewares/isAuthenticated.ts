@@ -3,6 +3,12 @@ import { verify } from 'jsonwebtoken';
 import AppError from '@shared/errors/AppError';
 import authConfig from '@config/auth';
 
+interface TokenPayload {
+  iat: number;
+  exp: number;
+  sub: string;
+}
+
 export default function isAuthenticated(
   request: Request,
   response: Response,
@@ -14,13 +20,20 @@ export default function isAuthenticated(
     throw new AppError('JWT Token is missing.');
   }
 
+  // Bearer lhieuhrksbsmdufygsdf
   const [, token] = authHeader.split(' ');
 
   /**
    * Necessário try/catch neste bloco pq é uma exceção que pode ser lançada pela lib
    */
   try {
-    const decodeToken = verify(token, authConfig.jwt.secret);
+    const decodedToken = verify(token, authConfig.jwt.secret);
+
+    const { sub } = decodedToken as TokenPayload;
+
+    request.user = {
+      id: sub,
+    };
 
     return next();
   } catch {
