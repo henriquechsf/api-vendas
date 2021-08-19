@@ -53,5 +53,6 @@ yarn typeorm migration:run
 - adicionar lib multer para upload imagem avatar
 
 #######################################################################
+# Reset de password e envio de e-mail
 
--
+- instalar lib date-fns - para funções de data
