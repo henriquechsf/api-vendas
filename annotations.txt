@@ -58,3 +58,4 @@ yarn typeorm migration:run
 - instalar lib date-fns - para funções de data
 - instalar lib nodemailer para envio de email
 - usar Ethereal para simular caixa de email
+- instalar lib handlebars para usar template html no emails
