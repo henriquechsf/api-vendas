@@ -56,3 +56,5 @@ yarn typeorm migration:run
 # Reset de password e envio de e-mail
 
 - instalar lib date-fns - para funções de data
+- instalar lib nodemailer para envio de email
+- usar Ethereal para simular caixa de email
