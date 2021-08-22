@@ -62,3 +62,4 @@ yarn typeorm migration:run
 
 #######################################################################
 
+- adiciona relacionamentos de entidades
