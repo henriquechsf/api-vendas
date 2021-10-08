@@ -63,3 +63,9 @@ yarn typeorm migration:run
 #######################################################################
 
 - adiciona relacionamentos de entidades
+- adiciona lib typeorm-pagination para paginar as listagens
+
+######################################################################
+
+- adioca lib dotenv para configurar as variaveis de ambiente
+-
