@@ -74,4 +74,8 @@ yarn typeorm migration:run
 
 - adiciona lib ioredis para adicionar cache
   yarn add redis ioredis (instalar types -D)
+- adiciona cliente redis no docker
 
+########################################################################
+
+- adiciona lib para controler rate-limiter
