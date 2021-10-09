@@ -56,7 +56,7 @@ class CustomersController {
   public async delete(request: Request, response: Response): Promise<Response> {
     const { id } = request.params;
 
-    const deleteCustomer = new DeleteCustomersService();
+    const deleteCustomer = container.resolve(DeleteCustomersService);
 
     await deleteCustomer.execute({ id });
 
