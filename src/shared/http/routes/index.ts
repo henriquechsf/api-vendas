@@ -17,8 +17,8 @@ routes.use('/profile', profileRouter);
 routes.use('/customers', customersRouter);
 routes.use('/orders', ordersRouter);
 
-// routes.get('/', (request, response) => {
-//   return response.json({ message: 'Hello Dev' });
-// });
+routes.get('/', (request, response) => {
+  return response.json({ message: 'API - Vendas' });
+});
 
 export default routes;
