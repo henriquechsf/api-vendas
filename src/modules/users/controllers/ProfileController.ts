@@ -27,7 +27,7 @@ class ProfileController {
       oldPassword,
     });
 
-    return response.json(user);
+    return response.json(classToClass(user));
   }
 }
 
