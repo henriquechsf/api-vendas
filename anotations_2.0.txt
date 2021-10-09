@@ -1,0 +1,48 @@
+Conteudo da versão 2.0 da API
+
+- Domain Driven Design
+- Principios SOLID
+- Camada de Domínio
+- Camada de Infraestrurura
+- Refatoração dos Repositórios e Serviços
+- Injeção de Dependencias
+- Testes Automatizados
+- Coverage Report
+
+############################################################
+
+DDD - Desenvolvimento guiado ao domínio
+Camada de domínio - módulos, entidades, regras de negócio
+Camada de Infra - Bibliotecas e Serviços externos
+
+SOLID
+S - Single Responsibility Principle
+    deve ter apenas uma responsabilidade
+
+O - Open Closed Principle
+    Aberto para extensão. Fechado para alteração. Ao adicionar funcionalidade
+    evitar modificar classes que já estão implementadas.
+
+L - Liskov Substitution Principle
+    Poder substituir classes base pela classe filha
+
+I - Interface Segregration Principle
+    Interface específica é melhor do que interfaces genéricas
+
+D - Dependency Inversion Principle
+    Classes devem depender de abstrações e não de implementações
+
+!Benefícios: evitar código acoplado(macarrônico), menos efeitos colaterais,
+melhor manutenção, mais testável. Garantia de Qualidade
+
+
+##############################################################################
+
+CAMADA DE INFRA
+CAMADA Domain
+
+#############################################################################
+
+- adiciona lib tsyringe da microsoft para injeção de dependencias
+
+
