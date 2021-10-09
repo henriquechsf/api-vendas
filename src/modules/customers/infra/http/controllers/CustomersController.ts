@@ -8,7 +8,7 @@ import { container } from 'tsyringe'; // lib injeção de dependencia
 
 class CustomersController {
   public async index(request: Request, response: Response): Promise<Response> {
-    const listCustomers = new ListCustomerService();
+    const listCustomers = container.resolve(ListCustomerService);
 
     const customers = await listCustomers.execute();
 
