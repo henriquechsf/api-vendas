@@ -42,7 +42,7 @@ class CustomersController {
     const { name, email } = request.body;
     const { id } = request.params;
 
-    const updateCustomer = new UpdateCustomerService();
+    const updateCustomer = container.resolve(UpdateCustomerService);
 
     const customer = await updateCustomer.execute({
       id,
