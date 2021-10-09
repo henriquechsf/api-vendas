@@ -69,3 +69,9 @@ yarn typeorm migration:run
 
 - adiciona lib dotenv para configurar as variaveis de ambiente
 - adiciona lib class-transformer para personalizar o retorno das entidades
+
+#########################################################################
+
+- adiciona lib ioredis para adicionar cache
+  yarn add redis ioredis (instalar types -D)
+
