@@ -18,7 +18,7 @@ class CustomersController {
   public async show(request: Request, response: Response): Promise<Response> {
     const { id } = request.params;
 
-    const showCustomer = new ShowCustomerService();
+    const showCustomer = container.resolve(ShowCustomerService);
 
     const customer = await showCustomer.execute({ id });
 

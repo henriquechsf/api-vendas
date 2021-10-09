@@ -1,4 +1,5 @@
 import { getCustomRepository } from 'typeorm';
+import { ICustomersRepository } from '../domain/repositories/ICustomersRepository';
 import Customer from '../infra/typeorm/entities/Customer';
 import CustomersRepository from '../infra/typeorm/repositories/CustomersRepository';
 
@@ -14,6 +15,8 @@ interface IPaginateCustomer {
 }
 
 class ListCustomerService {
+  constructor(private customersRepository: ICustomersRepository) {}
+
   public async execute(): Promise<IPaginateCustomer> {
     const customersRepository = getCustomRepository(CustomersRepository);
 
