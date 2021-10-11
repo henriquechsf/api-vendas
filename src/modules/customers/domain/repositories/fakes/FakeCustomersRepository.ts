@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
 import { ICreateCustomer } from '@modules/customers/domain/models/ICreateCustomer';
-import { ICustomer } from '@modules/customers/domain/models/ICustomer';
 import { ICustomerPaginate } from '@modules/customers/domain/models/ICustomerPaginate';
 import { ICustomersRepository } from '@modules/customers/domain/repositories/ICustomersRepository';
 import Customer from '@modules/customers/infra/typeorm/entities/Customer';
@@ -20,7 +19,11 @@ class FakeCustomersRepository implements ICustomersRepository {
   }
 
   public async save(customer: Customer): Promise<Customer> {
-    Object.assign(this.customers, customer);
+    const findIndex = this.customers.findIndex(
+      findCustomer => findCustomer.id === customer.id,
+    );
+
+    this.customers[findIndex] = customer;
 
     return customer;
   }
