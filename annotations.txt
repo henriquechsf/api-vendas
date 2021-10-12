@@ -79,3 +79,23 @@ yarn typeorm migration:run
 ########################################################################
 
 - adiciona lib para controler rate-limiter
+
+
+
+
+########################################################################
+
+TDD - Test Driven Development
+
+- Testes criados baseados nos requisitos funcionais e não funcionais
+
+- instalar lib jest
+yarn add -D jest @types/jest
+yarn jest --init
+  - criar json = sim
+  - enviroment = node
+  - coverage = no
+  - provider = v8
+yarn add -D ts-jest
+
+- configurar jest.config
