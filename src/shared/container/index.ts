@@ -8,6 +8,8 @@ import { IUsersRepository } from '@modules/users/domain/repositories/IUsersRepos
 import UsersRepository from '@modules/users/infra/typeorm/repositories/UsersRepository';
 import { IUserTokensRepository } from '@modules/users/domain/repositories/IUserTokensRepository';
 import UserTokensRepository from '@modules/users/infra/typeorm/repositories/UserTokensRepository';
+import OrdersRepository from '@modules/orders/infra/typeorm/repositories/OrdersRepository';
+import { IOrdersRepository } from '@modules/orders/domain/repositories/IOrdersRepository';
 
 // mantém uma única instancia a cada ciclo de vida
 container.registerSingleton<ICustomersRepository>(
@@ -28,4 +30,9 @@ container.registerSingleton<IUsersRepository>(
 container.registerSingleton<IUserTokensRepository>(
   'UserTokensRepository',
   UserTokensRepository,
+);
+
+container.registerSingleton<IOrdersRepository>(
+  'OrdersRepository',
+  OrdersRepository,
 );
