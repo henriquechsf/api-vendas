@@ -25,7 +25,7 @@ app.use(routes);
 // metodo do celebrate para validar as requisições HTTP
 app.use(errors());
 
-/*app.use(
+app.use(
   (error: Error, request: Request, response: Response, next: NextFunction) => {
     if (error instanceof AppError) {
       return response.status(error.statusCode).json({
@@ -39,7 +39,7 @@ app.use(errors());
       message: 'Internal server error',
     });
   },
-);*/
+);
 
 const PORT = 3333;
 app.listen(PORT, () => {
