@@ -11,6 +11,9 @@ import UserTokensRepository from '@modules/users/infra/typeorm/repositories/User
 import OrdersRepository from '@modules/orders/infra/typeorm/repositories/OrdersRepository';
 import { IOrdersRepository } from '@modules/orders/domain/repositories/IOrdersRepository';
 
+// injecao do provider que está em outro diretório
+import '@modules/users/providers';
+
 // mantém uma única instancia a cada ciclo de vida
 container.registerSingleton<ICustomersRepository>(
   'CustomersRepository',
